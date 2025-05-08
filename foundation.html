@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Task-1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="apex-img">
+      <img src="apexplanet-low-resolution-logo-color-on-transparent-background.png" alt="ApexPlanet">
+    </div>
+    <div class="auth">
+      <div class="auth-log">
+        <button >Login</button>
+      </div>
+      <div class="auth-sign">
+          <button >Sign Up</button>
+        </div>
+    </div>
+  </nav>
+
+  <div class="alert1">
+    <p><span style="color: red;margin:5px">&#9888;</span>Interships are closing try to develop your skills by <a href="">click here</a> to get interships details</p></div>
+  <div class="log">
+    <div class="login">
+      <h2>Login</h2>
+      <p>with</p>
+        <div class="socialbtn">
+          <button id="git">GitHub</button>
+          <button id="google">Google</button>
+          <button id="linked">LinkedIn</button>
+        </div>
+        <p>or</p>
+      <div class="inputarea">
+          <label for="">Login</label><br>
+          <input type="text" name="" id="user" placeholder="Ex:john123"><br>
+          <label for="">password</label><br>
+          <div class="password-container">
+          <input type="password" name="" id="pass" placeholder="Ex:John_123"><i class="fa fa-eye password-toggle" id="togglePassword"></i><br>
+          </div>
+          <a href="#">Forgot your password?</a><br>
+      </div>
+        <div class="log-acc">
+          <button type="submit" id="logbtn">Login</button>
+          <a href="">Don't have a account yet?</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="terms">
+      <ul>
+        <li><a href="">Terms of use </a> |</li>
+        <li><a href="">Privacy policy </a> |</li>
+        <li><a href="">site Feedback </a> |</li>
+        <li><a href="">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="help">
+      <a href="https://apexplanet.in/"><button id="apxbtn">ApexPlanet internship</button></a>
+      <p>©ApexPanet 2025</p>
+      <button onclick="helpfunction()" id="help"><i class="fas fa-question-circle"></i> Help</button>
+    </div>
+  </footer>
+  <script>
+    function helpfunction()
+    {
+      prompt("Enter the query you have")
+    }
+  </script>
+</body>
+</html>

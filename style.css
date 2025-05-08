@@ -1,0 +1,246 @@
+body
+{
+  margin: 0;
+  background: #35cc44;
+  background: linear-gradient(123deg,rgba(53, 204, 68, 1) 0%, rgba(44, 76, 158, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: arial;
+}
+nav
+{
+  margin: 0px;
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  display: flex;
+}
+nav .apex-img,.auth
+{
+  width: 50%;
+}
+.apex-img img
+{
+  width: 200px;
+}
+.auth
+{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.auth-log,.auth-sign
+{
+ 
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-log button
+{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+
+}
+.auth-sign button
+{
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+.alert1
+{
+  background-color:yellow;
+  width: 100%;
+  height:fit-content;
+  font-size: 15px;
+}
+.log
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login
+{
+  margin-top: 20px;
+  border-radius: 4px;
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.socialbtn
+{
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.socialbtn button
+{
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  width:80px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgb(108, 101, 101);
+  cursor: pointer;
+  font-weight: bold;
+}
+#git
+{
+  background-color:black;
+  color: white;
+}
+#linked
+{
+  background-color: #5E5DF0;
+  color: #FFFFFF;
+}
+
+.login p{
+  margin-top: 10px;
+  color: rgb(112, 105, 105);
+}
+.password-container
+{
+  position: relative;
+}
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #4c34e8; /* Adjust color as desired */
+}
+input
+{
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  background-color: rgb(232, 240, 254);
+}
+.inputarea a
+{
+  display: flex;
+  color: rgb(135, 35, 255);
+  text-decoration: none;
+  flex-direction: row-reverse;
+  font-size: small;
+  font-weight: bold;
+}
+.log-acc
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.log-acc button
+{
+  padding: 10px;
+  padding-left: 15px;
+  padding-right:15px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(135, 35, 255);
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer
+{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(194, 177, 154);
+  padding: 15px;
+  height: fit-content;
+}
+footer div
+{
+  width: 50%;
+  display:flex;
+  align-items: center;
+  
+}
+.terms ul
+{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the spacing between items */
+}
+.terms ul li a{
+  text-decoration: none;
+}
+.help
+{
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+  align-items: center;
+}
+#apxbtn
+{
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#help
+{
+  border: none;
+  padding: 7px;
+  border-radius: 15px;
+  background-color: #35cc44;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
