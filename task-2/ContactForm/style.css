@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, rgba(53, 204, 68, 1), rgba(44, 76, 158, 1));
+  color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.btn:hover {
+  background-color: #1a5edb;
+}
+
+
+@media (max-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  button.btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  button.btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+@media (min-width: 401px) and (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .full-width {
+    grid-column: span 1; 
+  }
+
+  .container {
+    max-width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .full-width {
+    grid-column: span 2; 
+  }
+
+  .container {
+    max-width: 700px;
+    padding: 25px;
+    margin: 40px auto;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .form-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .full-width {
+    grid-column: span 2;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+  }
+}
