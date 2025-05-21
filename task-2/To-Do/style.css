@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.todo-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#addTaskBtn {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+
+button.complete-btn {
+  background-color: #28a745; /* Light Green */
+  color: white;
+  margin-left: 10px;
+}
+
+button.complete-btn:hover {
+  background-color: #218838;
+}
+
+button.remove-btn {
+  background-color: #dc3545; /* Red */
+  color: white;
+  margin-left: 10px;
+}
+
+button.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+span {
+  margin-bottom: 10px;
+  flex-grow: 1; 
+  width:200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  background-color: #007bff;
+}
+.task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.task-display {
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: transparent;
+  width: 100%;
+  word-wrap: break-word;
+  word-break:break-word;
+}
+
+.date-display {
+  font-size: 0.9em;
+  color: #555;
+  background-color: transparent;
+  width: 100%;
+}
+.buttons-container 
+{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 10px;
+}
