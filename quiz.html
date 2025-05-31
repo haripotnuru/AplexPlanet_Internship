@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz App with Login/Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="auth-container">
+
+  <!-- LOGIN/REGISTER FORM -->
+  <div id="login-register-section">
+    <h2 id="form-title">Login</h2>
+    <form id="login-form">
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" required autocomplete="username" />
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" required autocomplete="current-password" />
+      <label for="login-role">Role</label>
+      <select id="login-role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+      </select>
+      <button type="submit">Login</button>
+    </form>
+    <div class="link" id="to-register">Don't have an account? Register</div>
+
+    <form id="register-form" class="hidden">
+      <label for="register-username">Username</label>
+      <input type="text" id="register-username" required autocomplete="username" />
+      <label for="register-password">Password</label>
+      <input type="password" id="register-password" required autocomplete="new-password" />
+      <label for="register-password2">Confirm Password</label>
+      <input type="password" id="register-password2" required autocomplete="new-password" />
+      <label for="register-role">Role</label>
+      <select id="register-role" required>
+        <option value="" disabled selected>Select Role</option>
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <div class="link hidden" id="to-login">Already have an account? Login</div>
+  </div>
+
+  <!-- TEACHER DASHBOARD -->
+  <div id="teacher-dashboard" class="hidden">
+    <h2>Teacher Panel</h2>
+    <p><b>Welcome, <span id="teacher-name"></span></b></p>
+    <div>
+      <label>Quiz Code (share this with students):</label>
+      <input type="text" id="quiz-code" readonly />
+      <button id="generate-code">Generate New Quiz Code</button>
+    </div>
+    <hr />
+    <h3>Add Question</h3>
+    <form id="add-question-form">
+      <label>Question</label>
+      <input type="text" id="question-text" required />
+      <label>Option 1</label>
+      <input type="text" id="option1" required />
+      <label>Option 2</label>
+      <input type="text" id="option2" required />
+      <label>Option 3</label>
+      <input type="text" id="option3" required />
+      <label>Option 4</label>
+      <input type="text" id="option4" required />
+      <label>Correct Option (1-4)</label>
+      <input type="number" id="correct-option" min="1" max="4" required />
+      <button type="submit">Add Question</button>
+    </form>
+    <h3>Questions Added</h3>
+    <ul id="question-list"></ul>
+    <button id="logout-teacher" style="background:#e74c3c;">Logout</button>
+  </div>
+
+  <!-- STUDENT DASHBOARD -->
+  <div id="student-dashboard" class="hidden">
+    <h2>Student Panel</h2>
+    <p><b>Welcome, <span id="student-name"></span></b></p>
+    <div id="join-quiz-section">
+      <label for="student-quiz-code">Enter Quiz Code</label>
+      <input type="text" id="student-quiz-code" placeholder="Enter quiz code" />
+      <button id="start-quiz-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-section" class="hidden">
+      <h3 id="quiz-question-text"></h3>
+      <div class="options">
+        <label><input type="radio" name="quiz-option" value="1" /> <span id="opt1-text">Option1</span></label>
+        <label><input type="radio" name="quiz-option" value="2" /> <span id="opt2-text">Option2</span></label>
+        <label><input type="radio" name="quiz-option" value="3" /> <span id="opt3-text">Option3</span></label>
+        <label><input type="radio" name="quiz-option" value="4" /> <span id="opt4-text">Option4</span></label>
+      </div>
+      <button id="submit-answer-btn">Submit Answer</button>
+      <p id="quiz-progress"></p>
+    </div>
+    <div id="quiz-result" class="hidden">
+      <h3>Your Score: <span id="final-score"></span> / <span id="total-questions"></span></h3>
+      <button id="finish-quiz-btn">Finish Quiz</button>
+    </div>
+    <button id="logout-student" style="background:#e74c3c;">Logout</button>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
